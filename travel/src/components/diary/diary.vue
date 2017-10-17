@@ -1,6 +1,6 @@
 <template>
   <div>
-    我是story
+    随想
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <div>
-    我是义工页面
+      地图声音
   </div>
 </template>
 
