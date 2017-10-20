@@ -1,6 +1,6 @@
 <template>
   <div>
-      地图声音
+      我的
   </div>
 </template>
 

@@ -13,10 +13,12 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
-    {path: '/',
+    {
+      path: '/',
       redirect: '/volunteerPost'
     },
-    {path: '/volunteerPost',
+    {
+      path: '/volunteerPost',
       component: volunteerPost
     },
     {
