@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="volunteer">
       义工招募
 
   </div>
@@ -9,6 +9,8 @@
   export default {}
 </script>
 
-<style lang="stylus" rel='stylesheet/stylus'>
 
+<style lang="stylus" rel='stylesheet/stylus'>
+.volunteer
+  background-image:url("../../../static/images/nav-backgroung.jpg")
 </style>
