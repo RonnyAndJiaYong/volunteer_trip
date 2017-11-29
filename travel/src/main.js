@@ -2,14 +2,14 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App.vue'
-import Router from 'vue-router'
+import axios from 'axios'
 import router from './router'
 import store from './store'
 import './common/stylus/index.styl'
 /* eslint no-multiple-empty-lines: "error" */
 Vue.config.productionTip = false
 
-Vue.use(Router)
+Vue.use(axios)
 
 /* eslint-disable no-new */
  new Vue({
