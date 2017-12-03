@@ -8,6 +8,7 @@ const volunteerPost = resolve => require(['components/volunteerPost/volunteerPos
 const diary = resolve => require(['components/diary/diary'], resolve)
 const voiceMap = resolve => require(['components/voiceMap/voiceMap'], resolve)
 const personal = resolve => require(['components/personal/personal'], resolve)
+const volunteerDetail = resolve => require(['components/volunteerDetail/volunteerDetail'], resolve)
 
 Vue.use(Router)
 
@@ -32,6 +33,11 @@ export default new Router({
     {
       path: '/personal',
       component: personal
+    },
+    {
+      path: '/detail',
+      // props: true,
+      component: volunteerDetail
     }
   ],
   mode: 'history'
