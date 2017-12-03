@@ -33,7 +33,8 @@ NetworkService.sendTime = {
     NetworkService.sendTime.apiStartTime.push(startTime)
     //设置一个5秒的定时器，手动移除api
     setTimeout(function () {
-    
+    var index = $.inArray(apiName, arr);
+
     },5000)
   }
 
