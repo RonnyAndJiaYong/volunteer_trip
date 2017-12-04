@@ -2,7 +2,7 @@
 import axios from 'axios'
 
 export NetworkService
-管理所有请求的数据
+//管理所有请求的数据
 NetworkService = {}
 
 let domain = '127.0.0.1'
