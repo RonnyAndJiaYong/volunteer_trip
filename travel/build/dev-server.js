@@ -24,7 +24,7 @@ var proxyTable = config.dev.proxyTable
 
 var app = express()
 var appData=require('../data.json');
-var volunteer=appData.volunteer;
+var volunteer=appData.volunteerPage;
 var onroad=appData.onroad;
 var story=appData.story;
 

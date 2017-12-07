@@ -2,7 +2,7 @@
   <div class="volunteer">
   <!-- 义工招募 -->
     <div v-for="v in volunteers">
-      <router-link :to="{path: 'detail', query: {id: v.id}}">
+      <router-link :to="{path: '/volunteerPostDetail', query: {id: v.id}}">
         <section class="recruit">
           <figure class="recruit-icon">
             <img v-bind:src="v.icon" v-bind:alt="v.author" />
@@ -21,11 +21,11 @@
       </router-link>
     </div>
   </div>
-    
+
 </template>
 
 <script type='text/ecmascript-6'>
-  import getVolunteer from '../../api/test.js';
+  import networkService from 'Service/networkService.js';
   export default {
     data() {
       return {
@@ -33,8 +33,8 @@
       };
     },
     mounted() {
-      getVolunteer().then(res => {
-        this.volunteers = res;
+      networkService.send('queryVolunteerPage').then(res => {
+        this.volunteers = res.volunteerPage;
       });
     }
   }
@@ -96,5 +96,5 @@
       margin-bottom: 0;
       &>span
         font-size: 12px;
-        
+
 </style>

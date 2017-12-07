@@ -35,7 +35,7 @@ export default new Router({
       component: personal
     },
     {
-      path: '/detail',
+      path: '/volunteerPostDetail',
       // props: true,
       component: volunteerDetail
     }
