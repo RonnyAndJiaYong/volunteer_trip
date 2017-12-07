@@ -91,17 +91,17 @@ NetworkService.send = function (apiName, dataToSend) {
       }
     }).then(function (data) {
       NetworkService.sendTime.end(apiName)
-      if (data.checkCode > 0){
+      if (data.data.data.checkCode > 0){
         if (NetworkService.print_log){
-          console.log(apiName + 'ajax Success && checkCode>0' + data.checkCode)
+          console.log(apiName + 'ajax Success && checkCode>0' + data.data.checkCode)
           console.log('   ' + apiName + 'send' + dataToSend)
-          console.log('   ' + apiName + 'response' + data)
+          console.log('   ' + apiName + 'response' + data.data)
         }
         return resolve(data)
       } else {
-        console.warn(apiName + 'ajax Success && checkCode>0' + data.checkCode)
+        console.warn(apiName + 'ajax Success && checkCode>0' + data.data.checkCode)
         console.warn('   ' + apiName + 'send' + dataToSend)
-        console.warn('   ' + apiName + 'response' + data)
+        console.warn('   ' + apiName + 'response' + data.data)
         return resolve(data)
       }
     }).catch(function (error) {
